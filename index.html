@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes spin {
+            100% {
+                background-position: 0 -11550px;
+            }
+        }
+
+        #cube {
+            background: url('3d-cube.svg') no-repeat;
+            background-size: auto;
+            animation: spin 1s steps(21) infinite alternate;
+            width: 400px;
+            height: 550px;
+            background-size: 100%;
+            transform-origin: center;
+            /* transform: scale(2, 2); */
+        }
+
+        body {
+            background-color: pink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="cube"></div>
+</body>
+
+</html>
